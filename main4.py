@@ -16,7 +16,7 @@ movie_titles = [movie.getText() for movie in all_movies]
 # method 2:
 movies = movie_titles[::-1]
 
-with open("movies.txt", mode="w") as file:
+with open("movies.txt", mode="w", encoding="utf-8") as file:
     for movie in movies:
         file.write(f"{movie}\n")
 
